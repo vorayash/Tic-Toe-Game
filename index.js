@@ -4,6 +4,8 @@ let click = 1;
 
 let flag=true;
 
+document.getElementById("turn").innerText="Turn of Player O";
+
 for (button of buttons) {
   button.addEventListener('click', mark);
   function mark(e) {
@@ -12,12 +14,15 @@ for (button of buttons) {
       e.target.innerHTML += `O`;
       click++;
       e.target.removeEventListener("click", mark);
+      document.getElementById("turn").innerText="Turn of Player X";
 
     }
     else if (click %2 ==0) {
       e.target.innerHTML = `X`;
       click++;
       e.target.removeEventListener("click", mark);
+      document.getElementById("turn").innerText="Turn of Player O";
+
     }
 
 
