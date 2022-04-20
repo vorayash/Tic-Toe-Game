@@ -1,3 +1,3 @@
-#Tic Toe Game
+## Tic Toe Game
 
 https://vorayash.github.io/Tic-Toe-Game/
